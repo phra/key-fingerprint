@@ -25,6 +25,8 @@ export function fingerprint(
 ) {
   const cleanKey = cert.replace(regex, '')
   const buffer = new Buffer(cleanKey, 'base64')
-  const hash = createHash(algorithm).update(buffer).digest('hex')
+  const hash = createHash(algorithm.toLowerCase()).update(buffer).digest('hex')
   return colons ? _colons(hash) : hash
 }
+
+export default fingerprint
