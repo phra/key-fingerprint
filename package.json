@@ -1,0 +1,19 @@
+{
+  "name": "key-fingerprint",
+  "version": "1.0.0",
+  "description": "Node.js library to easy calculate MD*, SHA*, etc fingerprint of a public/private key.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:phra/key-fingerprint.git",
+  "author": "phra <greensoncio@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "prepublish": "tsc -p ."
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.33",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.3"
+  }
+}
