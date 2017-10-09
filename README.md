@@ -3,7 +3,11 @@ Node.js library to easy calculate MD*, SHA*, etc fingerprint of a public/private
 
 ## Installation
 
-`npm install key-fingerprint` or `yarn add key-fingerprint`
+`npm install key-fingerprint`
+
+OR
+
+`yarn add key-fingerprint`
 
 ## Usage
 
@@ -27,5 +31,5 @@ import { fingerprint } from 'key-fingerprint'
 
 const key = '-----BEGIN PUBLIC KEY-----\n.........'
 const sha256 = fingerprint(key, 'sha256') // => 'ab12ef12....
-const sha256WithColons = fingerprint(key, 'sha256') // => 'ab:12:ef:12....
+const sha256WithColons = fingerprint(key, 'sha256', true) // => 'ab:12:ef:12....
 ```
