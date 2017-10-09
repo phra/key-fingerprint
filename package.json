@@ -10,7 +10,7 @@
   "private": false,
   "scripts": {
     "commit": "git-cz",
-    "prepublish": "tsc -p .",
+    "prepublishOnly": "tsc -p .",
     "pretest": "rimraf dist && tsc -p .",
     "test": "NODE_ENV=test jest --coverage",
     "test:ci": "npm run pretest && NODE_ENV=test jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
