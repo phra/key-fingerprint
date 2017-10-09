@@ -4,9 +4,6 @@ import { createHash } from 'crypto'
 const regex = /\n| |-----BEGIN CERTIFICATE-----|-----END CERTIFICATE-----|-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|ssh-rsa|(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g
 
 export enum SUPPORTED_ALGORITHM {
-  BLAKE2B512 = 'blake2b512',
-  BLAKE2S256 = 'blake2s256',
-  GOST = 'gost',
   MD4 = 'md4',
   MD5 = 'md5',
   RMD160 = 'rmd160',
