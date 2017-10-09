@@ -1,7 +1,7 @@
 import { createHash } from 'crypto'
 
 // tslint:disable-next-line:max-line-length
-const regex = /\n| |-----BEGIN CERTIFICATE-----|-----END CERTIFICATE-----|-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|ssh-rsa|(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g
+const regex = /\n| |-----BEGIN CERTIFICATE-----|-----END CERTIFICATE-----|-----BEGIN RSA PRIVATE KEY-----|-----END RSA PRIVATE KEY-----|-----BEGIN RSA PUBLIC KEY-----|-----END RSA PUBLIC KEY-----|-----BEGIN PRIVATE KEY-----|-----END PRIVATE KEY-----|-----BEGIN PUBLIC KEY-----|-----END PUBLIC KEY-----|ssh-rsa|(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/g
 
 export enum SUPPORTED_ALGORITHM {
   MD4 = 'md4',
