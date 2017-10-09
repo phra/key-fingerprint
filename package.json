@@ -9,11 +9,67 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "prepublish": "tsc -p ."
+    "commit": "git-cz",
+    "prepublish": "tsc -p .",
+    "pretest": "rimraf dist; tsc -p .",
+    "test": "NODE_ENV=test jest --coverage",
+    "test:watch": "NODE_ENV=test jest --coverage --watch",
+    "lint": "tslint -p .",
+    "validate": "npm ls"
   },
   "devDependencies": {
+    "@types/jest": "^21.1.2",
     "@types/node": "^8.0.33",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "jest": "^21.2.1",
+    "precommit-hook": "^3.0.0",
+    "rimraf": "^2.6.2",
+    "ts-jest": "^21.1.1",
     "tslint": "^5.7.0",
     "typescript": "^2.5.3"
-  }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "/node_modules/",
+      "/app/",
+      "<rootDir>/dist/"
+    ],
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testPathIgnorePatterns": [
+      "/coverage/",
+      "/dist/",
+      "/node_modules/",
+      "/app/"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "json"
+    ],
+    "testEnvironment": "node",
+    "mapCoverage": true,
+    "coverageThreshold": {
+      "global": {
+        "statements": 100,
+        "branches": 100,
+        "functions": 100,
+        "lines": 100
+      }
+    }
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ]
 }
