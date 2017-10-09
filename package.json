@@ -11,8 +11,9 @@
   "scripts": {
     "commit": "git-cz",
     "prepublish": "tsc -p .",
-    "pretest": "rimraf dist; tsc -p .",
+    "pretest": "rimraf dist && tsc -p .",
     "test": "NODE_ENV=test jest --coverage",
+    "test:ci": "npm run pretest && NODE_ENV=test jest --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "test:watch": "NODE_ENV=test jest --coverage --watch",
     "lint": "tslint -p .",
     "validate": "npm ls"
@@ -21,6 +22,7 @@
     "@types/jest": "^21.1.2",
     "@types/node": "^8.0.33",
     "commitizen": "^2.9.6",
+    "coveralls": "^3.0.0",
     "cz-conventional-changelog": "^2.0.0",
     "jest": "^21.2.1",
     "precommit-hook": "^3.0.0",
