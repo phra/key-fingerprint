@@ -37,13 +37,23 @@ describe('key-fingerprint', () => {
     it('default', () => {
       expect(fingerprint(cert)).toMatchSnapshot()
     })
+
     for (const alg of algs) {
-      for (const enc of encs) {
         it(alg, () => {
-          expect(fingerprint(cert, {algorithm: alg, encoding: enc})).toMatchSnapshot()
+          expect(fingerprint(cert, alg)).toMatchSnapshot()
         })
         it(alg + ' with colons', () => {
-          expect(fingerprint(cert, {algorithm: alg, encoding: enc, colons: true})).toMatchSnapshot()
+          expect(fingerprint(cert, alg, true)).toMatchSnapshot()
+        })
+    }
+
+    for (const alg of algs) {
+      for (const enc of encs) {
+        it(alg + ' with ' + enc + ' encoding', () => {
+          expect(fingerprint(cert, { algorithm: alg, encoding: enc })).toMatchSnapshot()
+        })
+        it(alg + ' with ' + enc + ' encoding and with colons', () => {
+          expect(fingerprint(cert, { algorithm: alg, encoding: enc, colons: true })).toMatchSnapshot()
         })
       }
     }

@@ -26,18 +26,27 @@ interface IConfig {
   encoding: SUPPORTED_ENCODING,
 }
 
+const DEFAULT_CONFIGURATION: IConfig = {
+  algorithm: SUPPORTED_ALGORITHM.SHA256,
+  colons: false,
+  encoding: SUPPORTED_ENCODING.HEX,
+}
+
 function _colons(fingerprintHex: string) {
   return fingerprintHex.replace(/(.{2})(?=.)/g, '$1:')
 }
 
 export function fingerprint(
   cert: string,
-  config: IConfig | string = SUPPORTED_ALGORITHM.SHA256,
-  colons: null | boolean = false,
+  config: Partial<IConfig> | string = SUPPORTED_ALGORITHM.SHA256,
+  useColons: boolean = false,
 ) {
-  const algorithm = typeof config === 'string' ? config : config.algorithm
-  colons = typeof config === 'object' && config.encoding  ? config.colons : colons
-  const encoding = typeof config === 'object' && config.encoding || SUPPORTED_ENCODING.HEX
+  const { algorithm, colons, encoding } = Object.assign(
+    Object.create(null),
+    DEFAULT_CONFIGURATION,
+    typeof config === 'string' ? { algorithm: config, colons: useColons } : config,
+  ) as IConfig
+
   const cleanKey = cert.replace(regex, '')
   const buffer = new Buffer(cleanKey, 'base64')
   const hash = createHash(algorithm.toLowerCase()).update(buffer).digest(encoding)
