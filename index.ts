@@ -14,18 +14,33 @@ export enum SUPPORTED_ALGORITHM {
   SHA512 = 'sha512',
 }
 
+export enum SUPPORTED_ENCODING {
+  HEX = 'hex',
+  LATIN1 = 'latin1',
+  BASE64 = 'base64',
+}
+
+interface IConfig {
+  algorithm: SUPPORTED_ALGORITHM,
+  colons: boolean,
+  encoding: SUPPORTED_ENCODING,
+}
+
 function _colons(fingerprintHex: string) {
   return fingerprintHex.replace(/(.{2})(?=.)/g, '$1:')
 }
 
 export function fingerprint(
   cert: string,
-  algorithm: SUPPORTED_ALGORITHM = SUPPORTED_ALGORITHM.SHA256,
-  colons: boolean = false,
+  config: IConfig | string = SUPPORTED_ALGORITHM.SHA256,
+  colons: null | boolean = false,
 ) {
+  const algorithm = typeof config === 'string' ? config : config.algorithm
+  colons = typeof config === 'object' && config.encoding  ? config.colons : colons
+  const encoding = typeof config === 'object' && config.encoding || SUPPORTED_ENCODING.HEX
   const cleanKey = cert.replace(regex, '')
   const buffer = new Buffer(cleanKey, 'base64')
-  const hash = createHash(algorithm.toLowerCase()).update(buffer).digest('hex')
+  const hash = createHash(algorithm.toLowerCase()).update(buffer).digest(encoding)
   return colons ? _colons(hash) : hash
 }
 
