@@ -4,32 +4,96 @@ exports[`key-fingerprint algorithms default 1`] = `"7526eab8d9ba5176a261e53e0acc
 
 exports[`key-fingerprint algorithms md4 1`] = `"d4a90d747b83333bcffb8ea69db100f1"`;
 
+exports[`key-fingerprint algorithms md4 with base64 encoding 1`] = `"1KkNdHuDMzvP+46mnbEA8Q=="`;
+
+exports[`key-fingerprint algorithms md4 with base64 encoding and with colons 1`] = `"1K:kN:dH:uD:Mz:vP:+4:6m:nb:EA:8Q:=="`;
+
 exports[`key-fingerprint algorithms md4 with colons 1`] = `"d4:a9:0d:74:7b:83:33:3b:cf:fb:8e:a6:9d:b1:00:f1"`;
+
+exports[`key-fingerprint algorithms md4 with hex encoding 1`] = `"d4a90d747b83333bcffb8ea69db100f1"`;
+
+exports[`key-fingerprint algorithms md4 with hex encoding and with colons 1`] = `"d4:a9:0d:74:7b:83:33:3b:cf:fb:8e:a6:9d:b1:00:f1"`;
 
 exports[`key-fingerprint algorithms md5 1`] = `"723451b92df28a18019af370f5fbd277"`;
 
+exports[`key-fingerprint algorithms md5 with base64 encoding 1`] = `"cjRRuS3yihgBmvNw9fvSdw=="`;
+
+exports[`key-fingerprint algorithms md5 with base64 encoding and with colons 1`] = `"cj:RR:uS:3y:ih:gB:mv:Nw:9f:vS:dw:=="`;
+
 exports[`key-fingerprint algorithms md5 with colons 1`] = `"72:34:51:b9:2d:f2:8a:18:01:9a:f3:70:f5:fb:d2:77"`;
+
+exports[`key-fingerprint algorithms md5 with hex encoding 1`] = `"723451b92df28a18019af370f5fbd277"`;
+
+exports[`key-fingerprint algorithms md5 with hex encoding and with colons 1`] = `"72:34:51:b9:2d:f2:8a:18:01:9a:f3:70:f5:fb:d2:77"`;
 
 exports[`key-fingerprint algorithms rmd160 1`] = `"4a0a4c0d17c5a0d57c33046ef4f8b667a0826f9e"`;
 
+exports[`key-fingerprint algorithms rmd160 with base64 encoding 1`] = `"SgpMDRfFoNV8MwRu9Pi2Z6CCb54="`;
+
+exports[`key-fingerprint algorithms rmd160 with base64 encoding and with colons 1`] = `"Sg:pM:DR:fF:oN:V8:Mw:Ru:9P:i2:Z6:CC:b5:4="`;
+
 exports[`key-fingerprint algorithms rmd160 with colons 1`] = `"4a:0a:4c:0d:17:c5:a0:d5:7c:33:04:6e:f4:f8:b6:67:a0:82:6f:9e"`;
+
+exports[`key-fingerprint algorithms rmd160 with hex encoding 1`] = `"4a0a4c0d17c5a0d57c33046ef4f8b667a0826f9e"`;
+
+exports[`key-fingerprint algorithms rmd160 with hex encoding and with colons 1`] = `"4a:0a:4c:0d:17:c5:a0:d5:7c:33:04:6e:f4:f8:b6:67:a0:82:6f:9e"`;
 
 exports[`key-fingerprint algorithms sha1 1`] = `"8c6415e72e553d2a9bda7afc9fcc0a5ec5d82841"`;
 
+exports[`key-fingerprint algorithms sha1 with base64 encoding 1`] = `"jGQV5y5VPSqb2nr8n8wKXsXYKEE="`;
+
+exports[`key-fingerprint algorithms sha1 with base64 encoding and with colons 1`] = `"jG:QV:5y:5V:PS:qb:2n:r8:n8:wK:Xs:XY:KE:E="`;
+
 exports[`key-fingerprint algorithms sha1 with colons 1`] = `"8c:64:15:e7:2e:55:3d:2a:9b:da:7a:fc:9f:cc:0a:5e:c5:d8:28:41"`;
+
+exports[`key-fingerprint algorithms sha1 with hex encoding 1`] = `"8c6415e72e553d2a9bda7afc9fcc0a5ec5d82841"`;
+
+exports[`key-fingerprint algorithms sha1 with hex encoding and with colons 1`] = `"8c:64:15:e7:2e:55:3d:2a:9b:da:7a:fc:9f:cc:0a:5e:c5:d8:28:41"`;
 
 exports[`key-fingerprint algorithms sha224 1`] = `"6f3eb2ae5bc826678184067452cb923ba4031628d74714561e0f0769"`;
 
+exports[`key-fingerprint algorithms sha224 with base64 encoding 1`] = `"bz6yrlvIJmeBhAZ0UsuSO6QDFijXRxRWHg8HaQ=="`;
+
+exports[`key-fingerprint algorithms sha224 with base64 encoding and with colons 1`] = `"bz:6y:rl:vI:Jm:eB:hA:Z0:Us:uS:O6:QD:Fi:jX:Rx:RW:Hg:8H:aQ:=="`;
+
 exports[`key-fingerprint algorithms sha224 with colons 1`] = `"6f:3e:b2:ae:5b:c8:26:67:81:84:06:74:52:cb:92:3b:a4:03:16:28:d7:47:14:56:1e:0f:07:69"`;
+
+exports[`key-fingerprint algorithms sha224 with hex encoding 1`] = `"6f3eb2ae5bc826678184067452cb923ba4031628d74714561e0f0769"`;
+
+exports[`key-fingerprint algorithms sha224 with hex encoding and with colons 1`] = `"6f:3e:b2:ae:5b:c8:26:67:81:84:06:74:52:cb:92:3b:a4:03:16:28:d7:47:14:56:1e:0f:07:69"`;
 
 exports[`key-fingerprint algorithms sha256 1`] = `"7526eab8d9ba5176a261e53e0acc8a51c1a0ab780f0f4cbdcfad30fa5fc3393c"`;
 
+exports[`key-fingerprint algorithms sha256 with base64 encoding 1`] = `"dSbquNm6UXaiYeU+CsyKUcGgq3gPD0y9z60w+l/DOTw="`;
+
+exports[`key-fingerprint algorithms sha256 with base64 encoding and with colons 1`] = `"dS:bq:uN:m6:UX:ai:Ye:U+:Cs:yK:Uc:Gg:q3:gP:D0:y9:z6:0w:+l:/D:OT:w="`;
+
 exports[`key-fingerprint algorithms sha256 with colons 1`] = `"75:26:ea:b8:d9:ba:51:76:a2:61:e5:3e:0a:cc:8a:51:c1:a0:ab:78:0f:0f:4c:bd:cf:ad:30:fa:5f:c3:39:3c"`;
+
+exports[`key-fingerprint algorithms sha256 with hex encoding 1`] = `"7526eab8d9ba5176a261e53e0acc8a51c1a0ab780f0f4cbdcfad30fa5fc3393c"`;
+
+exports[`key-fingerprint algorithms sha256 with hex encoding and with colons 1`] = `"75:26:ea:b8:d9:ba:51:76:a2:61:e5:3e:0a:cc:8a:51:c1:a0:ab:78:0f:0f:4c:bd:cf:ad:30:fa:5f:c3:39:3c"`;
 
 exports[`key-fingerprint algorithms sha384 1`] = `"c107f3433a5aeab0856825a5d0c58913dbb950ee7edc5eba98cd09f2989c68fea44ba8543a95ad75c8d812f414cce8b5"`;
 
+exports[`key-fingerprint algorithms sha384 with base64 encoding 1`] = `"wQfzQzpa6rCFaCWl0MWJE9u5UO5+3F66mM0J8picaP6kS6hUOpWtdcjYEvQUzOi1"`;
+
+exports[`key-fingerprint algorithms sha384 with base64 encoding and with colons 1`] = `"wQ:fz:Qz:pa:6r:CF:aC:Wl:0M:WJ:E9:u5:UO:5+:3F:66:mM:0J:8p:ic:aP:6k:S6:hU:Op:Wt:dc:jY:Ev:QU:zO:i1"`;
+
 exports[`key-fingerprint algorithms sha384 with colons 1`] = `"c1:07:f3:43:3a:5a:ea:b0:85:68:25:a5:d0:c5:89:13:db:b9:50:ee:7e:dc:5e:ba:98:cd:09:f2:98:9c:68:fe:a4:4b:a8:54:3a:95:ad:75:c8:d8:12:f4:14:cc:e8:b5"`;
+
+exports[`key-fingerprint algorithms sha384 with hex encoding 1`] = `"c107f3433a5aeab0856825a5d0c58913dbb950ee7edc5eba98cd09f2989c68fea44ba8543a95ad75c8d812f414cce8b5"`;
+
+exports[`key-fingerprint algorithms sha384 with hex encoding and with colons 1`] = `"c1:07:f3:43:3a:5a:ea:b0:85:68:25:a5:d0:c5:89:13:db:b9:50:ee:7e:dc:5e:ba:98:cd:09:f2:98:9c:68:fe:a4:4b:a8:54:3a:95:ad:75:c8:d8:12:f4:14:cc:e8:b5"`;
 
 exports[`key-fingerprint algorithms sha512 1`] = `"c9f325e4362fc7a31c349d9120fa0ebc85ea57d4461610b3b18de01839be1799741320546f0513e67bcb5dbdaf34d1f25ca606057a4fb3b107c44c63a5461f43"`;
 
+exports[`key-fingerprint algorithms sha512 with base64 encoding 1`] = `"yfMl5DYvx6McNJ2RIPoOvIXqV9RGFhCzsY3gGDm+F5l0EyBUbwUT5nvLXb2vNNHyXKYGBXpPs7EHxExjpUYfQw=="`;
+
+exports[`key-fingerprint algorithms sha512 with base64 encoding and with colons 1`] = `"yf:Ml:5D:Yv:x6:Mc:NJ:2R:IP:oO:vI:Xq:V9:RG:Fh:Cz:sY:3g:GD:m+:F5:l0:Ey:BU:bw:UT:5n:vL:Xb:2v:NN:Hy:XK:YG:BX:pP:s7:EH:xE:xj:pU:Yf:Qw:=="`;
+
 exports[`key-fingerprint algorithms sha512 with colons 1`] = `"c9:f3:25:e4:36:2f:c7:a3:1c:34:9d:91:20:fa:0e:bc:85:ea:57:d4:46:16:10:b3:b1:8d:e0:18:39:be:17:99:74:13:20:54:6f:05:13:e6:7b:cb:5d:bd:af:34:d1:f2:5c:a6:06:05:7a:4f:b3:b1:07:c4:4c:63:a5:46:1f:43"`;
+
+exports[`key-fingerprint algorithms sha512 with hex encoding 1`] = `"c9f325e4362fc7a31c349d9120fa0ebc85ea57d4461610b3b18de01839be1799741320546f0513e67bcb5dbdaf34d1f25ca606057a4fb3b107c44c63a5461f43"`;
+
+exports[`key-fingerprint algorithms sha512 with hex encoding and with colons 1`] = `"c9:f3:25:e4:36:2f:c7:a3:1c:34:9d:91:20:fa:0e:bc:85:ea:57:d4:46:16:10:b3:b1:8d:e0:18:39:be:17:99:74:13:20:54:6f:05:13:e6:7b:cb:5d:bd:af:34:d1:f2:5c:a6:06:05:7a:4f:b3:b1:07:c4:4c:63:a5:46:1f:43"`;
